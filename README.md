@@ -32,3 +32,28 @@ It also calculates the **BMI** and categorizes the user’s health status, then 
   - `label_encoder.pkl` – Encodes/decodes model outputs
 
 ---
+## 📂 Project Structure
+- ├── app.py # Flask backend application
+- ├── templates/
+- │ └── index.html # Main HTML page
+- ├── static/
+- │ └── style.css # Custom styles for UI
+- ├── best_health_model.pkl # Pre-trained ML model
+- ├── label_encoder.pkl # Label encoder for predictions
+- ├── README.md # Project documentation
+
+## ⚙️ Installation & Setup
+
+```bash
+1️⃣ Clone the Repository
+git clone https://github.com/yourusername/fit-aura.git
+cd fit-aura
+
+2️⃣ Create Virtual Environment & Install Dependencies
+python -m venv venv
+source venv/bin/activate   # On macOS/Linux
+venv\Scripts\activate      # On Windows
+
+pip install flask joblib numpy scikit-learn
+3️⃣ Run the Application
+python app.py
